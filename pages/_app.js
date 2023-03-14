@@ -12,6 +12,11 @@ import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
 
+import { createContext } from 'react'
+import { fetchAPI } from '../lib/api'
+import { getStrapiMedia } from '../lib/media'
+
+export const GlobalContext = createContext({})
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
